@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8713C43D1FAA5953005087D4 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8713C43B1FAA5953005087D4 /* SWRevealViewController.m */; };
 		876FBBC41FA8FDE9000F6F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876FBBC31FA8FDE9000F6F42 /* AppDelegate.swift */; };
-		876FBBC61FA8FDE9000F6F42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876FBBC51FA8FDE9000F6F42 /* ViewController.swift */; };
 		876FBBC91FA8FDE9000F6F42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876FBBC71FA8FDE9000F6F42 /* Main.storyboard */; };
 		876FBBCB1FA8FDE9000F6F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 876FBBCA1FA8FDE9000F6F42 /* Assets.xcassets */; };
 		876FBBCE1FA8FDE9000F6F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876FBBCC1FA8FDE9000F6F42 /* LaunchScreen.storyboard */; };
-		87ADA5B01FAA4D1B00224195 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87ADA5AE1FAA4D1B00224195 /* SWRevealViewController.m */; };
+		87ADA5B51FAA526700224195 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ADA5B41FAA526700224195 /* ChatVC.swift */; };
+		87ADA5B71FAA527A00224195 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ADA5B61FAA527A00224195 /* ChannelVC.swift */; };
 		F042904F2F7DE5BB6AD846D6 /* Pods_Tryat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3513261202CD0111656D66E6 /* Pods_Tryat.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,16 +21,17 @@
 		1C73609ECE642545C81BF7A7 /* Pods-Tryat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tryat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tryat/Pods-Tryat.debug.xcconfig"; sourceTree = "<group>"; };
 		3513261202CD0111656D66E6 /* Pods_Tryat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tryat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		645DAEE95207846E5D7C3296 /* Pods-Tryat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tryat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tryat/Pods-Tryat.release.xcconfig"; sourceTree = "<group>"; };
+		8713C43A1FAA5951005087D4 /* Tryat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tryat-Bridging-Header.h"; sourceTree = "<group>"; };
+		8713C43B1FAA5953005087D4 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		8713C43C1FAA5953005087D4 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		876FBBC01FA8FDE9000F6F42 /* Tryat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tryat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		876FBBC31FA8FDE9000F6F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		876FBBC51FA8FDE9000F6F42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		876FBBC81FA8FDE9000F6F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		876FBBCA1FA8FDE9000F6F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		876FBBCD1FA8FDE9000F6F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		876FBBCF1FA8FDE9000F6F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87ADA5AD1FAA4D1A00224195 /* Tryat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tryat-Bridging-Header.h"; sourceTree = "<group>"; };
-		87ADA5AE1FAA4D1B00224195 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		87ADA5AF1FAA4D1B00224195 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		87ADA5B41FAA526700224195 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		87ADA5B61FAA527A00224195 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,6 @@
 		876FBBB71FA8FDE9000F6F42 = {
 			isa = PBXGroup;
 			children = (
-				87ADA5AC1FAA4CE600224195 /* Supporting Files */,
 				876FBBC21FA8FDE9000F6F42 /* Tryat */,
 				876FBBC11FA8FDE9000F6F42 /* Products */,
 				03009FCCADCB39F5FEB4CAFF /* Pods */,
@@ -75,8 +76,11 @@
 		876FBBC21FA8FDE9000F6F42 /* Tryat */ = {
 			isa = PBXGroup;
 			children = (
+				87ADA5B31FAA523500224195 /* Model */,
+				87ADA5B21FAA523000224195 /* Views */,
+				87ADA5B11FAA521F00224195 /* Controller */,
+				87ADA5AC1FAA4CE600224195 /* Supporting Files */,
 				876FBBC31FA8FDE9000F6F42 /* AppDelegate.swift */,
-				876FBBC51FA8FDE9000F6F42 /* ViewController.swift */,
 				876FBBC71FA8FDE9000F6F42 /* Main.storyboard */,
 				876FBBCA1FA8FDE9000F6F42 /* Assets.xcassets */,
 				876FBBCC1FA8FDE9000F6F42 /* LaunchScreen.storyboard */,
@@ -88,11 +92,34 @@
 		87ADA5AC1FAA4CE600224195 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				87ADA5AF1FAA4D1B00224195 /* SWRevealViewController.h */,
-				87ADA5AE1FAA4D1B00224195 /* SWRevealViewController.m */,
-				87ADA5AD1FAA4D1A00224195 /* Tryat-Bridging-Header.h */,
+				8713C43C1FAA5953005087D4 /* SWRevealViewController.h */,
+				8713C43B1FAA5953005087D4 /* SWRevealViewController.m */,
+				8713C43A1FAA5951005087D4 /* Tryat-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87ADA5B11FAA521F00224195 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				87ADA5B41FAA526700224195 /* ChatVC.swift */,
+				87ADA5B61FAA527A00224195 /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		87ADA5B21FAA523000224195 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		87ADA5B31FAA523500224195 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C3FD9DC9EE2A39A3FB12C7F9 /* Frameworks */ = {
@@ -227,9 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				876FBBC61FA8FDE9000F6F42 /* ViewController.swift in Sources */,
+				87ADA5B71FAA527A00224195 /* ChannelVC.swift in Sources */,
+				87ADA5B51FAA526700224195 /* ChatVC.swift in Sources */,
 				876FBBC41FA8FDE9000F6F42 /* AppDelegate.swift in Sources */,
-				87ADA5B01FAA4D1B00224195 /* SWRevealViewController.m in Sources */,
+				8713C43D1FAA5953005087D4 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,9 +401,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sahariarkabir.Tryat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Tryat-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tryat/Supporting Files/Tryat-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -391,8 +419,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sahariarkabir.Tryat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Tryat-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tryat/Supporting Files/Tryat-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
