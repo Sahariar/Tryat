@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8713C43D1FAA5953005087D4 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8713C43B1FAA5953005087D4 /* SWRevealViewController.m */; };
+		8713C43F1FAA66E5005087D4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8713C43E1FAA66E5005087D4 /* GradientView.swift */; };
 		876FBBC41FA8FDE9000F6F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876FBBC31FA8FDE9000F6F42 /* AppDelegate.swift */; };
 		876FBBC91FA8FDE9000F6F42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876FBBC71FA8FDE9000F6F42 /* Main.storyboard */; };
 		876FBBCB1FA8FDE9000F6F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 876FBBCA1FA8FDE9000F6F42 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		8713C43A1FAA5951005087D4 /* Tryat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tryat-Bridging-Header.h"; sourceTree = "<group>"; };
 		8713C43B1FAA5953005087D4 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		8713C43C1FAA5953005087D4 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		8713C43E1FAA66E5005087D4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		876FBBC01FA8FDE9000F6F42 /* Tryat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tryat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		876FBBC31FA8FDE9000F6F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		876FBBC81FA8FDE9000F6F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		87ADA5B21FAA523000224195 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8713C43E1FAA66E5005087D4 /* GradientView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				87ADA5B71FAA527A00224195 /* ChannelVC.swift in Sources */,
 				87ADA5B51FAA526700224195 /* ChatVC.swift in Sources */,
+				8713C43F1FAA66E5005087D4 /* GradientView.swift in Sources */,
 				876FBBC41FA8FDE9000F6F42 /* AppDelegate.swift in Sources */,
 				8713C43D1FAA5953005087D4 /* SWRevealViewController.m in Sources */,
 			);
