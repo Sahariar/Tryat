@@ -1,0 +1,6 @@
+framework module Pods_Tryat {
+  umbrella header "Pods-Tryat-umbrella.h"
+
+  export *
+  module * { export * }
+}
