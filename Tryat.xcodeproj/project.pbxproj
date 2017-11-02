@@ -17,6 +17,7 @@
 		876FBBCE1FA8FDE9000F6F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876FBBCC1FA8FDE9000F6F42 /* LaunchScreen.storyboard */; };
 		87ADA5B51FAA526700224195 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ADA5B41FAA526700224195 /* ChatVC.swift */; };
 		87ADA5B71FAA527A00224195 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ADA5B61FAA527A00224195 /* ChannelVC.swift */; };
+		87C1DBBD1FAB4DE2004AA66A /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C1DBBC1FAB4DE2004AA66A /* CreateAccountVC.swift */; };
 		F042904F2F7DE5BB6AD846D6 /* Pods_Tryat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3513261202CD0111656D66E6 /* Pods_Tryat.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		876FBBCF1FA8FDE9000F6F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87ADA5B41FAA526700224195 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		87ADA5B61FAA527A00224195 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		87C1DBBC1FAB4DE2004AA66A /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				87ADA5B41FAA526700224195 /* ChatVC.swift */,
 				87ADA5B61FAA527A00224195 /* ChannelVC.swift */,
 				8758D0AE1FAB43BB000812BE /* LoginVC.swift */,
+				87C1DBBC1FAB4DE2004AA66A /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				87ADA5B71FAA527A00224195 /* ChannelVC.swift in Sources */,
 				87ADA5B51FAA526700224195 /* ChatVC.swift in Sources */,
+				87C1DBBD1FAB4DE2004AA66A /* CreateAccountVC.swift in Sources */,
 				8758D0AF1FAB43BB000812BE /* LoginVC.swift in Sources */,
 				8713C43F1FAA66E5005087D4 /* GradientView.swift in Sources */,
 				876FBBC41FA8FDE9000F6F42 /* AppDelegate.swift in Sources */,
