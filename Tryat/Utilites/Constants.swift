@@ -10,7 +10,7 @@ import Foundation
 
 typealias CompletionHandler = (_ Success: Bool) -> ()
 //url constent
-let base_Url = "http://localhost:3005/v1"
+let base_Url = "https://tryatchaty.herokuapp.com/v1"
 let register_Url = "\(base_Url)/account/register"
 
 

@@ -10,11 +10,36 @@ import UIKit
 
 class CreateAccountVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-		
-    }
+	@IBOutlet weak var usernameTxt: UITextField!
+	@IBOutlet weak var emailTxt: UITextField!
+	@IBOutlet weak var paswordTxt: UITextField!
+	@IBOutlet weak var profileImage: UIImageView!
 	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+	}
+	
+	@IBAction func CreateAccountPressed(_ sender: Any) {
+		guard let email = emailTxt.text , emailTxt.text != " " else {
+			return
+		}
+		guard let pass = paswordTxt.text , paswordTxt.text != " " else {
+			return
+		}
+		AuthService.instance.resgisterUser(email: email, password: pass) { (success) in
+			if success {
+				print("registered user")
+			}
+		}
+		
+	}
+	@IBAction func ChAvatarPressed(_ sender: Any) {
+		
+	}
+	@IBAction func bgCoChPressed(_ sender: Any) {
+		
+	}
 	@IBAction func closePressed(_ sender: Any) {
 		performSegue(withIdentifier: UNWIND, sender: nil)
 	}

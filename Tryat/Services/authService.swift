@@ -59,7 +59,6 @@ var authToken : String {
 				debugPrint(response.result.error as Any)
 			}
 		}
-		
 	}
 	
 	
