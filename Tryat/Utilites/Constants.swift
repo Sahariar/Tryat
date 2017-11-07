@@ -13,6 +13,7 @@ typealias CompletionHandler = (_ Success: Bool) -> ()
 let base_Url = "https://tryatchaty.herokuapp.com/v1"
 let register_Url = "\(base_Url)/account/register"
 let login_Url = "\(base_Url)/account/login"
+let addUser_Url = "\(base_Url)/user/add"
 
 //segue
 let TO_LOGIN =  "toLogin"
