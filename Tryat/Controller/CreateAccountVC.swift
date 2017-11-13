@@ -51,7 +51,7 @@ class CreateAccountVC: UIViewController {
 		
 	}
 	@IBAction func ChAvatarPressed(_ sender: Any) {
-		
+		performSegue(withIdentifier: TO_AVATAR_PICKER, sender: nil)
 	}
 	@IBAction func bgCoChPressed(_ sender: Any) {
 		
