@@ -10,6 +10,8 @@
 		8713C43D1FAA5953005087D4 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8713C43B1FAA5953005087D4 /* SWRevealViewController.m */; };
 		8713C43F1FAA66E5005087D4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8713C43E1FAA66E5005087D4 /* GradientView.swift */; };
 		871719411FB15C6A005F8ED1 /* userDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871719401FB15C6A005F8ED1 /* userDataService.swift */; };
+		8726D83E1FBB536C006088E3 /* ProfieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8726D83C1FBB536C006088E3 /* ProfieVC.swift */; };
+		8726D83F1FBB536C006088E3 /* ProfieVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8726D83D1FBB536C006088E3 /* ProfieVC.xib */; };
 		872A10BC1FAF259600E9766A /* roundbtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872A10BB1FAF259600E9766A /* roundbtn.swift */; };
 		8758D0AD1FAB372F000812BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8758D0AC1FAB372F000812BE /* Constants.swift */; };
 		8758D0AF1FAB43BB000812BE /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8758D0AE1FAB43BB000812BE /* LoginVC.swift */; };
@@ -23,6 +25,7 @@
 		87ADA5B51FAA526700224195 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ADA5B41FAA526700224195 /* ChatVC.swift */; };
 		87ADA5B71FAA527A00224195 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ADA5B61FAA527A00224195 /* ChannelVC.swift */; };
 		87C1DBBD1FAB4DE2004AA66A /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C1DBBC1FAB4DE2004AA66A /* CreateAccountVC.swift */; };
+		87F3C9731FBA34C300689A15 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F3C9721FBA34C300689A15 /* CircleImage.swift */; };
 		F042904F2F7DE5BB6AD846D6 /* Pods_Tryat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3513261202CD0111656D66E6 /* Pods_Tryat.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,8 @@
 		8713C43C1FAA5953005087D4 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		8713C43E1FAA66E5005087D4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		871719401FB15C6A005F8ED1 /* userDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userDataService.swift; sourceTree = "<group>"; };
+		8726D83C1FBB536C006088E3 /* ProfieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfieVC.swift; sourceTree = "<group>"; };
+		8726D83D1FBB536C006088E3 /* ProfieVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfieVC.xib; sourceTree = "<group>"; };
 		872A10BB1FAF259600E9766A /* roundbtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundbtn.swift; sourceTree = "<group>"; };
 		8758D0AC1FAB372F000812BE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8758D0AE1FAB43BB000812BE /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 		87ADA5B41FAA526700224195 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		87ADA5B61FAA527A00224195 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		87C1DBBC1FAB4DE2004AA66A /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		87F3C9721FBA34C300689A15 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,14 @@
 				645DAEE95207846E5D7C3296 /* Pods-Tryat.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8726D8401FBB55D5006088E3 /* xibfiles */ = {
+			isa = PBXGroup;
+			children = (
+				8726D83D1FBB536C006088E3 /* ProfieVC.xib */,
+			);
+			path = xibfiles;
 			sourceTree = "<group>";
 		};
 		8758D0A81FAB36F2000812BE /* Utilites */ = {
@@ -102,6 +116,7 @@
 		876FBBC21FA8FDE9000F6F42 /* Tryat */ = {
 			isa = PBXGroup;
 			children = (
+				8726D8401FBB55D5006088E3 /* xibfiles */,
 				878C82001FAE8C4B00D02022 /* Services */,
 				8758D0A81FAB36F2000812BE /* Utilites */,
 				87ADA5B31FAA523500224195 /* Model */,
@@ -144,6 +159,7 @@
 				8758D0AE1FAB43BB000812BE /* LoginVC.swift */,
 				87C1DBBC1FAB4DE2004AA66A /* CreateAccountVC.swift */,
 				8771246A1FB213A400FF59A5 /* avatarpickerVC.swift */,
+				8726D83C1FBB536C006088E3 /* ProfieVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,6 +170,7 @@
 				8713C43E1FAA66E5005087D4 /* GradientView.swift */,
 				872A10BB1FAF259600E9766A /* roundbtn.swift */,
 				8771246C1FB2176D00FF59A5 /* AvatarCell.swift */,
+				87F3C9721FBA34C300689A15 /* CircleImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,6 +256,7 @@
 				876FBBCE1FA8FDE9000F6F42 /* LaunchScreen.storyboard in Resources */,
 				876FBBCB1FA8FDE9000F6F42 /* Assets.xcassets in Resources */,
 				876FBBC91FA8FDE9000F6F42 /* Main.storyboard in Resources */,
+				8726D83F1FBB536C006088E3 /* ProfieVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +318,7 @@
 				87ADA5B71FAA527A00224195 /* ChannelVC.swift in Sources */,
 				8771246B1FB213A400FF59A5 /* avatarpickerVC.swift in Sources */,
 				872A10BC1FAF259600E9766A /* roundbtn.swift in Sources */,
+				87F3C9731FBA34C300689A15 /* CircleImage.swift in Sources */,
 				878C82021FAE8C8300D02022 /* authService.swift in Sources */,
 				87ADA5B51FAA526700224195 /* ChatVC.swift in Sources */,
 				87C1DBBD1FAB4DE2004AA66A /* CreateAccountVC.swift in Sources */,
@@ -307,6 +326,7 @@
 				8713C43F1FAA66E5005087D4 /* GradientView.swift in Sources */,
 				876FBBC41FA8FDE9000F6F42 /* AppDelegate.swift in Sources */,
 				8771246D1FB2176D00FF59A5 /* AvatarCell.swift in Sources */,
+				8726D83E1FBB536C006088E3 /* ProfieVC.swift in Sources */,
 				8713C43D1FAA5953005087D4 /* SWRevealViewController.m in Sources */,
 				871719411FB15C6A005F8ED1 /* userDataService.swift in Sources */,
 				8758D0AD1FAB372F000812BE /* Constants.swift in Sources */,
@@ -455,7 +475,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tryat/Supporting Files/Tryat-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -472,7 +492,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sahariarkabir.Tryat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tryat/Supporting Files/Tryat-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

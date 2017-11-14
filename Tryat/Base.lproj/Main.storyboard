@@ -126,7 +126,7 @@
                                     <segue destination="kCg-ju-c4c" kind="show" identifier="toLogin" id="eES-Cf-ouq"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="tKH-Lt-yhD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="tKH-Lt-yhD" customClass="CircleImage" customModule="Tryat" customModuleProvider="target">
                                 <rect key="frame" x="10" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="6Ke-4U-5nc"/>
@@ -187,6 +187,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="YCd-fM-TUy" id="MGt-IO-VJV"/>
+                        <outlet property="userimg" destination="tKH-Lt-yhD" id="Dj0-hC-12h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ob-n8-N6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -444,7 +445,7 @@
                                     <action selector="CreateAccountPressed:" destination="djW-vC-dup" eventType="touchUpInside" id="jt2-JA-STZ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Lt1-YL-hae">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Lt1-YL-hae" customClass="CircleImage" customModule="Tryat" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="366" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="00Z-01-1ZM"/>
@@ -480,6 +481,10 @@
                                     <action selector="createAccontBtnPressed:" destination="kCg-ju-c4c" eventType="touchUpInside" id="7Cq-s9-cFO"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Ytf-zz-izf">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.32549019607843138" green="0.41960784313725491" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -497,12 +502,15 @@
                             <constraint firstItem="JLZ-Ai-8Ea" firstAttribute="top" secondItem="8wz-r2-aXA" secondAttribute="top" constant="54" id="oqn-XW-wGD"/>
                             <constraint firstItem="Lt1-YL-hae" firstAttribute="centerX" secondItem="zeT-1g-fjN" secondAttribute="centerX" id="sWS-3e-eO9"/>
                             <constraint firstItem="4xe-IN-3wc" firstAttribute="width" secondItem="Lt1-YL-hae" secondAttribute="width" id="suP-Rx-I9C"/>
+                            <constraint firstItem="Ytf-zz-izf" firstAttribute="centerX" secondItem="zeT-1g-fjN" secondAttribute="centerX" id="vtw-dd-9Qo"/>
+                            <constraint firstItem="Ytf-zz-izf" firstAttribute="centerY" secondItem="zeT-1g-fjN" secondAttribute="centerY" constant="-100" id="xOa-Fn-e1t"/>
                             <constraint firstItem="bMS-ye-lO5" firstAttribute="top" secondItem="4xe-IN-3wc" secondAttribute="bottom" constant="5" id="yaZ-R3-kgh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8wz-r2-aXA"/>
                     </view>
                     <connections>
                         <outlet property="emailTxt" destination="8rh-io-oim" id="4bI-OY-ERu"/>
+                        <outlet property="loading" destination="Ytf-zz-izf" id="INa-bo-lVg"/>
                         <outlet property="paswordTxt" destination="CEa-tv-QIh" id="jAh-ad-g2B"/>
                         <outlet property="profileImage" destination="Lt1-YL-hae" id="nOU-yH-9sC"/>
                         <outlet property="usernameTxt" destination="gEC-Kv-lya" id="hnU-IT-BvT"/>

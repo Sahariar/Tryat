@@ -14,7 +14,11 @@ let base_Url = "https://tryatchaty.herokuapp.com/v1"
 let register_Url = "\(base_Url)/account/register"
 let login_Url = "\(base_Url)/account/login"
 let addUser_Url = "\(base_Url)/user/add"
+//color
+let purplePlaceholder = #colorLiteral(red: 0.3254901961, green: 0.4196078431, blue: 0.9686274529, alpha: 0.5)
+// Notification Center
 
+let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
 //segue
 let TO_LOGIN =  "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
