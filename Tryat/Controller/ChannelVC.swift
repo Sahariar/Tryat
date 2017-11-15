@@ -18,10 +18,15 @@ class ChannelVC: UIViewController {
 	}
 	override func viewDidLoad() {
         super.viewDidLoad()
-self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
+		self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
 		NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_: )), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
 		
     }
+	override func viewDidAppear(_ animated:Bool ) {
+		setUpUserInfo()
+	}
+	
+	
 	@IBAction func loginBtnPressed(_ sender: Any) {
 		if AuthService.instance.isLoggedIn {
 			let profile = ProfieVC()
@@ -31,7 +36,12 @@ self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 6
 			performSegue(withIdentifier: TO_LOGIN, sender: nil)
 		}
 	}
+	
 	@objc func userDataDidChange (_ notif: Notification){
+	setUpUserInfo()
+	}
+
+	func setUpUserInfo(){
 		if AuthService.instance.isLoggedIn {
 			loginBtn.setTitle(UserDataService.instance.name, for: .normal)
 			userimg.image = UIImage(named: UserDataService.instance.avatarName)
@@ -39,10 +49,9 @@ self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 6
 		}else{
 			loginBtn.setTitle("Login", for: .normal)
 			userimg.image = UIImage( named: "profileDefault")
-				userimg.backgroundColor = UIColor.clear
+			userimg.backgroundColor = UIColor.clear
 		}
 	}
-
 
 
 }

@@ -96,32 +96,41 @@ var authToken : String {
 			"avatarColor": avatarColor,
 			"avatarName":avatarName
 		]
-		let  header = [
-			"Authorization" : "Bearer \(AuthService.instance.authToken)",
-			"Content-Type" : "application/json; charset=utf-8"
-		]
-		Alamofire.request(addUser_Url, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+
+		Alamofire.request(addUser_Url, method: .post, parameters: body, encoding: JSONEncoding.default, headers: Bearer_header).responseJSON { (response) in
 			if response.result.error == nil {
 				guard let data = response.data else { return }
-				let json = JSON(data : data)
-				let id =  json["_id"].stringValue
-				let name =  json["name"].stringValue
-				let email =  json["email"].stringValue
-				let avatarName =  json["avatarName"].stringValue
-				let color =  json["avatarColor"].stringValue
-			UserDataService.instance.setUserDataService(id: id, color: color, avatarName: avatarName, email: email, name: name)
+				self.userInfoSetup(data: data)
 				completion(true)
 			} else{
 				completion(false)
 				debugPrint(response.result.error  as Any)
 			}
 		}
-		
-	
 	}
 	
-	
-	
+	func findUserByEmail(completion: @escaping CompletionHandler) {
+		
+		Alamofire.request("\(User_BY_Email_Url)\(userEmail)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: Bearer_header).responseJSON { (response) in
+			if response.result.error == nil {
+				guard let data = response.data else { return }
+				self.userInfoSetup(data: data)
+				completion(true)
+			} else {
+				completion(false)
+				debugPrint(response.result.error  as Any)
+			}
+		}
+	}
+	func userInfoSetup(data: Data){
+		let json = JSON(data : data)
+		let id =  json["_id"].stringValue
+		let name =  json["name"].stringValue
+		let email =  json["email"].stringValue
+		let avatarName =  json["avatarName"].stringValue
+		let color =  json["avatarColor"].stringValue
+		UserDataService.instance.setUserDataService(id: id, color: color, avatarName: avatarName, email: email, name: name)
+	}
 	
 	
 	

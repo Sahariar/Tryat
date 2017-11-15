@@ -233,6 +233,9 @@
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginBtnPressed:" destination="kCg-ju-c4c" eventType="touchUpInside" id="YyX-W1-S0v"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUU-uF-0UR">
                                         <rect key="frame" x="337" y="25" width="28" height="28"/>
@@ -301,10 +304,15 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Wg0-nD-dEu">
+                                        <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                        <color key="color" red="0.32549019610000002" green="0.41960784309999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Y0j-uF-CQ9" firstAttribute="top" secondItem="eXc-tF-8vW" secondAttribute="top" constant="60" id="0T1-gC-yIv"/>
+                                    <constraint firstItem="Wg0-nD-dEu" firstAttribute="centerX" secondItem="eXc-tF-8vW" secondAttribute="centerX" id="1yk-gk-hz4"/>
                                     <constraint firstItem="72e-2Z-SB4" firstAttribute="top" secondItem="Blw-gc-pdh" secondAttribute="bottom" constant="40" id="Ap6-dO-AnM"/>
                                     <constraint firstAttribute="trailing" secondItem="eUU-uF-0UR" secondAttribute="trailing" constant="10" id="HaH-0v-Wu2"/>
                                     <constraint firstItem="72e-2Z-SB4" firstAttribute="centerX" secondItem="eXc-tF-8vW" secondAttribute="centerX" id="QZd-vv-APP"/>
@@ -315,6 +323,7 @@
                                     <constraint firstItem="Blw-gc-pdh" firstAttribute="centerX" secondItem="eXc-tF-8vW" secondAttribute="centerX" id="imd-m3-AEq"/>
                                     <constraint firstItem="72e-2Z-SB4" firstAttribute="centerX" secondItem="eXc-tF-8vW" secondAttribute="centerX" id="sbD-jC-VF4"/>
                                     <constraint firstItem="6PL-r1-zYt" firstAttribute="top" secondItem="72e-2Z-SB4" secondAttribute="bottom" constant="10" id="skr-f2-y2v"/>
+                                    <constraint firstItem="Wg0-nD-dEu" firstAttribute="centerY" secondItem="eXc-tF-8vW" secondAttribute="centerY" constant="-100" id="yy3-I9-npI"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -328,6 +337,9 @@
                         <viewLayoutGuide key="safeArea" id="8d4-97-iIy"/>
                     </view>
                     <connections>
+                        <outlet property="spinner" destination="Wg0-nD-dEu" id="K7M-nm-TdA"/>
+                        <outlet property="userName" destination="bfL-Kh-5Ah" id="hxj-JI-f8d"/>
+                        <outlet property="userPass" destination="VGz-ch-f1V" id="sfI-Q4-liN"/>
                         <segue destination="djW-vC-dup" kind="show" identifier="toCreateAccount" id="luJ-ZI-BGf"/>
                     </connections>
                 </viewController>
