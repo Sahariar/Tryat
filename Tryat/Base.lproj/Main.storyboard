@@ -114,6 +114,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="By5-QI-ti2">
                                 <rect key="frame" x="281" y="102.5" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChaBtnPress:" destination="eEv-2M-CgG" eventType="touchUpInside" id="Znc-tT-9M4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCd-fM-TUy">
                                 <rect key="frame" x="105" y="593" width="46" height="33"/>
@@ -133,32 +136,37 @@
                                     <constraint firstAttribute="width" constant="75" id="HBX-O4-gMf"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dbk-Ih-V2M">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dbk-Ih-V2M">
                                 <rect key="frame" x="0.0" y="150" width="375" height="402"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6Ib-pA-5Eh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="channelCell" id="tA5-fX-JCi" customClass="ChannelCell" customModule="Tryat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Ib-pA-5Eh" id="5on-m9-dua">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tA5-fX-JCi" id="0aw-oN-F2M">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#genarel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4c-E1-GHP">
-                                                    <rect key="frame" x="35" y="12" width="66" height="20"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#genarel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugC-PO-u1u">
+                                                    <rect key="frame" x="15" y="11" width="68" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="U4c-E1-GHP" firstAttribute="centerY" secondItem="5on-m9-dua" secondAttribute="centerY" id="fMR-Cw-yUc"/>
-                                                <constraint firstItem="U4c-E1-GHP" firstAttribute="leading" secondItem="5on-m9-dua" secondAttribute="leadingMargin" constant="20" id="tbz-cd-gNP"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ugC-PO-u1u" secondAttribute="bottom" constant="1" id="P0t-TE-PGQ"/>
+                                                <constraint firstItem="ugC-PO-u1u" firstAttribute="top" secondItem="0aw-oN-F2M" secondAttribute="topMargin" id="VSE-bA-gOG"/>
+                                                <constraint firstItem="ugC-PO-u1u" firstAttribute="leading" secondItem="0aw-oN-F2M" secondAttribute="leadingMargin" id="XV2-K6-Ov2"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="ugC-PO-u1u" id="bnQ-6N-yWW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -179,14 +187,10 @@
                             <constraint firstItem="oxV-Kr-l7g" firstAttribute="trailing" secondItem="By5-QI-ti2" secondAttribute="trailing" constant="72" id="x9o-RF-CeL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oxV-Kr-l7g"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
-                                <color key="value" red="0.17254901960784313" green="0.83137254901960778" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="YCd-fM-TUy" id="MGt-IO-VJV"/>
+                        <outlet property="tableView" destination="dbk-Ih-V2M" id="aHD-GU-N75"/>
                         <outlet property="userimg" destination="tKH-Lt-yhD" id="Dj0-hC-12h"/>
                     </connections>
                 </viewController>
