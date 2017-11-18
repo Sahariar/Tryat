@@ -31,6 +31,7 @@
 		87ADA5B51FAA526700224195 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ADA5B41FAA526700224195 /* ChatVC.swift */; };
 		87ADA5B71FAA527A00224195 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ADA5B61FAA527A00224195 /* ChannelVC.swift */; };
 		87C1DBBD1FAB4DE2004AA66A /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C1DBBC1FAB4DE2004AA66A /* CreateAccountVC.swift */; };
+		87C8990D1FC0CF5F0024BF92 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C8990C1FC0CF5E0024BF92 /* Message.swift */; };
 		87F3C9731FBA34C300689A15 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F3C9721FBA34C300689A15 /* CircleImage.swift */; };
 		F042904F2F7DE5BB6AD846D6 /* Pods_Tryat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3513261202CD0111656D66E6 /* Pods_Tryat.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		87ADA5B41FAA526700224195 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		87ADA5B61FAA527A00224195 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		87C1DBBC1FAB4DE2004AA66A /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		87C8990C1FC0CF5E0024BF92 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		87F3C9721FBA34C300689A15 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				87817DA51FBC828500C92A12 /* Channel.swift */,
+				87C8990C1FC0CF5E0024BF92 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				8771246B1FB213A400FF59A5 /* avatarpickerVC.swift in Sources */,
 				872A10BC1FAF259600E9766A /* roundbtn.swift in Sources */,
 				87F3C9731FBA34C300689A15 /* CircleImage.swift in Sources */,
+				87C8990D1FC0CF5F0024BF92 /* Message.swift in Sources */,
 				87817DA61FBC828500C92A12 /* Channel.swift in Sources */,
 				878C82021FAE8C8300D02022 /* authService.swift in Sources */,
 				87817DA41FBC817900C92A12 /* MessageService.swift in Sources */,
