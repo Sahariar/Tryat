@@ -13,11 +13,17 @@ class ChatVC: UIViewController {
 //	Outlets
 
 	@IBOutlet weak var menuBtn: UIButton!
+	@IBOutlet weak var messageTxtBox: UITextField!
 	
 	@IBOutlet weak var channelNameLbl: UILabel!
 	
+	
+	
     override func viewDidLoad() {
         super.viewDidLoad()
+		view.bindToKeyboard()
+		let tap = UITapGestureRecognizer(target: self, action: #selector(ChatVC.handleTap))
+		view.addGestureRecognizer(tap)
 		menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
 		self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
 		self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
@@ -37,7 +43,22 @@ class ChatVC: UIViewController {
 	@objc func channelSelected(_ notif: Notification ) {
 		updateWithChannel()
 	}
-	
+	@objc func handleTap() {
+		view.endEditing(true)
+	}
+	@IBAction func sendBtnPressed(_ sender: Any) {
+		if AuthService.instance.isLoggedIn {
+			guard let channelId = MessageService.instance.selectedChannel?.id else { return }
+			guard let message = messageTxtBox.text else { return }
+		
+			SocketService.instance.addMessage(messageBody: message, channelId: channelId, userId: UserDataService.instance.id, completion: { (sucess) in
+				if sucess {
+					self.messageTxtBox.text = " "
+					self.messageTxtBox.resignFirstResponder()
+				}
+			})
+		}
+	}
 	func updateWithChannel() {
 		let channelName  = MessageService.instance.selectedChannel?.ChannelTitle ?? " "
 		channelNameLbl.text = "#\(channelName)"
@@ -74,6 +95,7 @@ class ChatVC: UIViewController {
 			if success {
 				
 			}else {
+				
 			}
 		}
 	}
