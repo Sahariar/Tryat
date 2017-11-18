@@ -22,6 +22,11 @@ let purplePlaceholder = #colorLiteral(red: 0.3254901961, green: 0.4196078431, bl
 // Notification Center
 
 let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
+let NOTIF_CHANNELS_LOAEDED = Notification.Name("channelsLoaded")
+let NOTIF_CHANNELS_SELECTED = Notification.Name("channelsSelected")
+
+
+
 //segue
 let TO_LOGIN =  "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"

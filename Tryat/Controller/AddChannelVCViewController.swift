@@ -23,6 +23,14 @@ class AddChannelVCViewController: UIViewController {
 	}
 	
 	@IBAction func CreChaBtnPress(_ sender: Any) {
+		guard let channelName = chNameTxt.text , chNameTxt.text != " " else { return }
+		guard let channelDesc = chDesTxt.text  else { return }
+		SocketService.instance.addChannel(channelName: channelName, channelDescription: channelDesc) { (success) in
+			if success {
+				self.dismiss(animated: true, completion: nil)
+			}
+		}
+		
 	}
 	func setUpView() {
 		let colseTouch = UITapGestureRecognizer(target: self, action: #selector(AddChannelVCViewController.closeTap(_:)))
